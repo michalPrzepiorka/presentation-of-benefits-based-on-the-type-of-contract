@@ -13,7 +13,7 @@ public class BenefitsOfContractsEmploymentApplication {
         // SpringApplication.run(BenefitsOfContractsEmploymentApplication.class, args);
 
         /**
-         * Spring Boot app launches our JavaFX app
+         * Spring Boot app launches JavaFX app
          */
         Application.launch(JavaFxApplication.class, args);
     }

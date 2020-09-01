@@ -3,7 +3,6 @@ package com.contracts;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,10 +13,9 @@ import org.springframework.stereotype.Component;
  **/
 
 @Component
-@FxmlView("main-scene.fxml")
 public class FxController {
 
-    private ContractService contractService;
+    private final ContractService contractService;
 
     @Autowired
     public FxController(ContractService contractService) {
