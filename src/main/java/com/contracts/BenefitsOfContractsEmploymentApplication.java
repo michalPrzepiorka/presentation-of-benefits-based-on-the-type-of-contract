@@ -1,13 +1,21 @@
 package com.contracts;
 
-import org.springframework.boot.SpringApplication;
+import javafx.application.Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class BenefitsOfContractsEmploymentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BenefitsOfContractsEmploymentApplication.class, args);
+        /**
+         * This is how normal Spring Boot app would be launched
+         */
+        // SpringApplication.run(BenefitsOfContractsEmploymentApplication.class, args);
+
+        /**
+         * Spring Boot app launches our JavaFX app
+         */
+        Application.launch(JavaFxApplication.class, args);
     }
 
 }
