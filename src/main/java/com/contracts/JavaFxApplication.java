@@ -30,7 +30,9 @@ public class JavaFxApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setScene(new Scene(root));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/panes/custom-style.css");
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
