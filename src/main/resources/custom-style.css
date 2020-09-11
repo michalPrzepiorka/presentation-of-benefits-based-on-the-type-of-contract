@@ -4,7 +4,7 @@
 }
 
 .menu-bar {
-    -fx-background-color: cornflowerblue;
+    -fx-background-color: #4aa6ff;
 }
 
 .tab-pane {
@@ -24,7 +24,7 @@
 }
 
 .tab-pane .tab {
-    -fx-background-color: cornflowerblue;
+    -fx-background-color: #4aa6ff;
 }
 
 .tab-pane .tab:selected {
@@ -46,4 +46,28 @@
 .tab-pane:top *.tab-header-area {
     -fx-background-insets: 0, 0 0 1 0;
     -fx-padding: 0.416667em 0.166667em 0.0em 0.0em;
+}
+
+.main-scroll-pane {
+    -fx-background-color: dod;
+}
+
+.jfx-text-field {
+    -fx-prompt-text-fill: #e8e6e6;
+    -jfx-focus-color: #4dff88;
+    -jfx-unfocus-color: #e8e6e6;
+    -fx-text-inner-color: #e8e6e6;
+}
+
+.jfx-entered-brutto {
+    -fx-prompt-text-fill: #e8e6e6;
+    -jfx-focus-color: #4dff88;
+    -jfx-unfocus-color: dodgerblue;
+    -fx-text-inner-color: #e8e6e6;
+    -fx-background-color: #4aa6ff;
+}
+
+.scroll-bar:vertical > .track-background, .scroll-bar:horizontal > .track-background {
+    -fx-background-color: #F1F1F1;
+    -fx-background-insets: 0.0;
 }
