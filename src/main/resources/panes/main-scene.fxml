@@ -54,8 +54,9 @@
                                             <children>
                                                 <VBox prefHeight="200.0" prefWidth="300.0">
                                                     <children>
-                                                        <JFXTextField focusColor="#17bf2d" promptText="Kwota brutto"
-                                                                      styleClass="jfx-entered-brutto"
+                                                        <JFXTextField fx:id="grossSalaryField" focusColor="#17bf2d"
+                                                                      promptText="Kwota brutto"
+                                                                      styleClass="jfx-entered-gross"
                                                                       unFocusColor="#e8e6e6">
                                                             <VBox.margin>
                                                                 <Insets top="20.0"/>
@@ -71,91 +72,102 @@
                                                                       prefWidth="320.0" spacing="10.0"
                                                                       style="-fx-background-color: #4aa6ff;">
                                                                     <children>
-                                                                        <JFXTextField focusColor="#17bf2d"
+                                                                        <JFXTextField fx:id="pensionContributionField"
+                                                                                      focusColor="#17bf2d"
                                                                                       promptText="Składka emerytalna"
                                                                                       unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Składka rentowa"
-                                                                                      unFocusColor="#e8e6e6">
+                                                                        <JFXTextField
+                                                                                fx:id="retirementPensionContributionField"
+                                                                                focusColor="#17bf2d"
+                                                                                promptText="Składka rentowa"
+                                                                                unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
+                                                                        <JFXTextField fx:id="SicknessContributionField"
+                                                                                      focusColor="#17bf2d"
                                                                                       promptText="Składka chorobowa"
                                                                                       unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Podstawa składki na ubezpiecznie zdrowotne"
-                                                                                      unFocusColor="#e8e6e6">
+                                                                        <JFXTextField
+                                                                                fx:id="BasisHealthInsuranceContributionField"
+                                                                                focusColor="#17bf2d"
+                                                                                promptText="Podstawa składki na ubezpiecznie zdrowotne"
+                                                                                unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Składka na ubezpiecznie zdrowotne"
-                                                                                      unFocusColor="#e8e6e6">
+                                                                        <JFXTextField
+                                                                                fx:id="healthInsuranceContributionField"
+                                                                                focusColor="#17bf2d"
+                                                                                promptText="Składka na ubezpiecznie zdrowotne"
+                                                                                unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
+                                                                        <JFXTextField fx:id="taxDeductibleCostField"
+                                                                                      focusColor="#17bf2d"
                                                                                       promptText="Koszt uzyskania przychodu"
                                                                                       unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Zaliczka na podatek dochodowy"
-                                                                                      unFocusColor="#e8e6e6">
+                                                                        <JFXTextField
+                                                                                fx:id="basisCalculatingAdvanceIncomeTaxField"
+                                                                                focusColor="#17bf2d"
+                                                                                promptText="Podstawa obliczenia zaliczki na podatek dochodowy"
+                                                                                unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Podstawa obliczenia zalicznki na podatek dochodowy"
-                                                                                      unFocusColor="#e8e6e6">
-                                                                            <VBox.margin>
-                                                                                <Insets bottom="20.0"/>
-                                                                            </VBox.margin>
-                                                                        </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
+                                                                        <JFXTextField fx:id="taxThresholdField"
+                                                                                      focusColor="#17bf2d"
                                                                                       promptText="Próg podatkowy"
                                                                                       unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Zaliczka na podatek dochodowy"
-                                                                                      unFocusColor="#e8e6e6">
+                                                                        <JFXTextField
+                                                                                fx:id="advancePaymentForIncomeTaxField"
+                                                                                focusColor="#17bf2d"
+                                                                                promptText="Zaliczka na podatek dochodowy"
+                                                                                unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
-                                                                                      promptText="Składka zdrowotna wg. stawki"
-                                                                                      unFocusColor="#e8e6e6">
+                                                                        <JFXTextField
+                                                                                fx:id="healthContributionAtTheRateField"
+                                                                                focusColor="#17bf2d"
+                                                                                promptText="Składka zdrowotna wg. stawki"
+                                                                                unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
+                                                                        <JFXTextField fx:id="taxCollectionIncomeField"
+                                                                                      focusColor="#17bf2d"
                                                                                       promptText="Zaliczka na podatek dochodowy do pobrania"
                                                                                       unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
                                                                                 <Insets bottom="20.0"/>
                                                                             </VBox.margin>
                                                                         </JFXTextField>
-                                                                        <JFXTextField focusColor="#17bf2d"
+                                                                        <JFXTextField fx:id="netSalaryField"
+                                                                                      focusColor="#17bf2d"
                                                                                       promptText="Wynagrodzenie netto"
                                                                                       unFocusColor="#e8e6e6">
                                                                             <VBox.margin>
@@ -178,8 +190,8 @@
                                 </AnchorPane>
                                 <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
                                     <children>
-                                        <JFXButton buttonType="RAISED" prefHeight="50.0" prefWidth="200.0"
-                                                   text="Check salary"/>
+                                        <JFXButton fx:id="checkSalaryButton" buttonType="RAISED" prefHeight="50.0"
+                                                   prefWidth="200.0" text="Check salary"/>
                                     </children>
                                 </HBox>
                             </children>
