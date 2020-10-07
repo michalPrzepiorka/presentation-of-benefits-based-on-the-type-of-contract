@@ -16,22 +16,4 @@ import java.util.Optional;
 
 public interface ContributionsRepository extends JpaRepository<ContributionsRatesEntity, Long> {
     List<ContributionsRatesEntity> findAllById(Long id);
-
-    @Modifying
-    @Transactional
-    @Query(
-            nativeQuery = true,
-            value = "insert into contributions (id, " +
-                    "health_contribution," +
-                    "health_insurance_contribution," +
-                    "pension_contribution," +
-                    "retirement_pension_contribution," +
-                    "sickness_contribution," +
-                    "health_insurance_contribution," +
-                    "tax_deductible_cost," +
-                    "income_tax," +
-                    "tax_free_allowance," +
-                    "health_contribution) values (1, 1, 1, 1, 1, 1, 1, 1, 1 ,1, 1)"
-    )
-    void addFinalValuesOfContributions(Long id, float health_contribution, float health_insurance_contribution);
 }
