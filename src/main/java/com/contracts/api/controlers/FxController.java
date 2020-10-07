@@ -1,5 +1,6 @@
-package com.contracts;
+package com.contracts.api.controlers;
 
+import com.contracts.service.ContractService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

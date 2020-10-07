@@ -1,4 +1,4 @@
-package com.contracts;
+package com.contracts.service;
 
 import org.springframework.stereotype.Service;
 
