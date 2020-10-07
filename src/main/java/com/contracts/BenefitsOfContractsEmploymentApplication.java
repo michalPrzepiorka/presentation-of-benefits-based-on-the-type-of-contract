@@ -1,6 +1,8 @@
 package com.contracts;
 
+import com.contracts.database.contributions.ContributionsRepository;
 import javafx.application.Application;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -17,5 +19,6 @@ public class BenefitsOfContractsEmploymentApplication {
          */
         Application.launch(JavaFxApplication.class, args);
     }
-
+    @Autowired
+    ContributionsRepository contributionsRepository;
 }
