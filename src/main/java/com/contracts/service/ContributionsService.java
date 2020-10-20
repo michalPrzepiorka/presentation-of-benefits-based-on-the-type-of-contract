@@ -26,27 +26,24 @@ public class ContributionsService {
     }
 
     @PostConstruct
-    public void loadData(){
-        List<Integer> taxDeductibleCost= new ArrayList<>();
-        taxDeductibleCost.add(1);
-        taxDeductibleCost.add(2);
+    public void loadData() {
+        List<Integer> taxDeductibleCost = new ArrayList<>();
+        taxDeductibleCost.add(250);
+        taxDeductibleCost.add(300);
         List<Float> incomeTax = new ArrayList<>();
-        incomeTax.add(1f);
-        incomeTax.add(2f);
+        incomeTax.add(17f);
+        incomeTax.add(32f);
 
         ContributionsRatesEntity contributionsRatesEntity = new ContributionsRatesEntity();
-        contributionsRatesEntity.setHealthContribution(1);
-        contributionsRatesEntity.setHealthInsuranceContribution(1);
-        contributionsRatesEntity.setPensionContribution(1);
-        contributionsRatesEntity.setRetirementPensionContribution(1);
-        contributionsRatesEntity.setSicknessContribution(1);
+        contributionsRatesEntity.setHealthContribution(7.75f);
+        contributionsRatesEntity.setHealthInsuranceContribution(9f);
+        contributionsRatesEntity.setPensionContribution(9.76f);
+        contributionsRatesEntity.setRetirementPensionContribution(1.5f);
+        contributionsRatesEntity.setSicknessContribution(2.45f);
         contributionsRatesEntity.setTaxDeductibleCost(taxDeductibleCost);
         contributionsRatesEntity.setIncomeTax(incomeTax);
-        contributionsRatesEntity.setTaxFreeAllowance(1);
-        contributionsRatesEntity.setHealthContribution(1);
+        contributionsRatesEntity.setTaxFreeAllowance(43.76f);
 
         contributionsRepository.save(contributionsRatesEntity);
     }
-
-
 }
