@@ -11,5 +11,7 @@ import java.util.List;
  **/
 
 public interface ContributionsRepository extends JpaRepository<ContributionsRatesEntity, Long> {
-    List<ContributionsRatesEntity> findAllById(Long id);
+//    @Query(value = "select * from CONTRIBUTIONS where ID = :id", nativeQuery = true)
+//    List<ContributionsRatesEntity> findAllById(Long id);
+//    ContributionsRatesEntity findById(Long id);
 }
