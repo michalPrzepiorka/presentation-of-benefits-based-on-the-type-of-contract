@@ -1,1 +1,3 @@
 rootProject.name = 'types-of-contracts-employment'
+include 'GUI'
+
