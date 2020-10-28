@@ -1,9 +1,12 @@
 package com.michal.gui;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Main extends Application {
 
@@ -12,10 +15,10 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
-        Label label = new Label("Test");
-        Scene scene = new Scene(label);
-        primaryStage.setScene(scene);
+    public void start(Stage primaryStage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/panes/main-scene.fxml"));
+        primaryStage.setTitle("Main view");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 }
